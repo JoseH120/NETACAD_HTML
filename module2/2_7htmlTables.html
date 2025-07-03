@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Tables</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 3px 0px;
+        }
+
+        table,
+        th,
+        td {
+            border-collapse: collapse;
+            border: 1px solid black
+        }
+    </style>
+</head>
+
+<body>
+    <h3>2.7.1 What are HTML tables.</h3>
+    <p>HTML tables are used to display data in rows and columns</p>
+    <p>Tables are made up of rows and columns, and each intersection of a row and a column is called a <b>cell</b></p>
+    <h3>2.7.2 Creating a Basic Table</h3>
+    <table>
+        <tr>
+            <td>Row1, Column1 </td>
+            <td>Row1, Column2 </td>
+        </tr>
+        <tr>
+            <td>Row2, Column1 </td>
+            <td>Row2, Column2 </td>
+        </tr>
+    </table>
+
+    <h3>2.7.3 Adding Headers.</h3>
+    <table>
+        <tr>
+            <th>Service</th>
+            <th>Prices</th>
+        </tr>
+        <tr>
+            <td>Web design</td>
+            <td>$500</td>
+        </tr>
+        <tr>
+            <td>Graphic design</td>
+            <td>$300</td>
+        </tr>
+        <tr>
+            <td>Content writting</td>
+            <td>$200</td>
+        </tr>
+        <tr>
+            <td>Social media management</td>
+            <td>$150</td>
+        </tr>
+    </table>
+    <h3>2.7.4 Merging cells</h3>
+    <table>
+        <tr>
+            <th rowspan="2">Product</th>
+            <th colspan="2">Prices</th>
+        </tr>
+        <tr>
+            <th>Old</th>
+            <th>New</th>
+        </tr>
+        <tr>
+            <td>Product 1</td>
+            <td>$10.00</td>
+            <td>$12.00</td>
+        </tr>
+        <tr>
+            <td>Product 2</td>
+            <td>$15.00</td>
+            <td>$18.00</td>
+        </tr>
+    </table>
+
+    <h3>2.7.5 The caption Element.</h3>
+    <table>
+        <caption>Product Prices</caption>
+        <tr>
+            <th>Product</th>
+            <th>Price</th>
+        </tr>
+        <tr>
+            <td>Product 1</td>
+            <td>$10.00</td>
+        </tr>
+        <tr>
+            <td>Product 2</td>
+            <td>$15.00</td>
+        </tr>
+    </table>
+    <h3>2.7.7. Other Table-Specific Attributes</h3>
+    <table>
+        <caption>Monthly Sales.</caption>
+        <thead>
+            <tr>
+                <td>Month</td>
+                <td>Sales</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>January</td>
+                <td>$10,000</td>
+            </tr>
+            <tr>
+                <td>February</td>
+                <td>$12,000</td>
+            </tr>
+            <tr>
+                <td>March</td>
+                <td>$15,000</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Total</td>
+                <td>$37,000</td>
+            </tr>
+        </tfoot>
+        <summary>This table shows the monthly sales figures fot the first quarter of the year.</summary>
+    </table>
+
+
+</body>
+
+</html>
