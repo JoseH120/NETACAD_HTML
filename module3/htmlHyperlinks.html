@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/misestilos.css">
+</head>
+
+<body>
+    <h3>The &lt;a&gt; tag and the href attribute.</h3>
+    <p>The <mark><em>&lt;a&gt;</em></mark> tag primarly relies on the <em><b>href</b></em> attribute, which <b>specifies
+            the destination of the link</b>. This destination can be an absolute URL (such as
+        <mark>https://example.com</mark>) or a relative URL (Like <mark>about.html</mark>)
+    </p>
+
+    <h3>Internal Links</h3>
+    <ul>
+        <li>
+            <mark>&lt;a href="https://example.com/page.html" &gt; link to page &lt;/a&gt;</mark>
+            the full address of the page (absolute URL)
+        </li>
+        <li>
+            <mark>&lt;a href="/page.html"&gt; Link to page &lt;/a&gt;</mark>
+            the relative URL which only includes the path to the page, and creates a link to the <em>page.html</em> file
+            in the same directory as the current page.
+        </li>
+    </ul>
+
+    <h3>Anchor Links</h3>
+    <ol>
+        <li>Add the <mark>id</mark> attribute to an html element on the page. <br> for example: <mark>&lt;h2
+                id="section-1"&gt; section 1 &lt;h2&gt;</mark></li>
+        <li>The, create a link that points to this anchor by adding the <mark>#</mark> symbol followed by the
+            <mark>id</mark> to the <mark>href</mark> attribute of an <mark>&lt;a&gt;</mark> tag like this:
+            <br> <mark>&lt;a href="#section-1"&gt; go to section &lt;/a&gt; </mark>
+        </li>
+    </ol>
+
+    <h3>External Links.</h3>
+    <p>It's important to note that because external links take users away from your website, you shold ensure that they
+        open in a new window or tab using the <mark>target</mark> attribute. For example
+    </p>
+
+    <p>
+        <mark>&lt;a href="https://example.com" target="_blank"&gt;Visit example.com &lt;/a&gt;</mark>
+    </p>
+
+    <h3>Email and telephone links</h3>
+    <h4>email links.</h4>
+    <p>To create an email link, you can use the <mark>mailto</mark> protocol followed by the email address that you want
+        to link to. Here's an example. </p>
+    <p>
+        <mark>&lt;a href="mailto:info@example.com"&gt;Email Us &lt;/a&gt;</mark>
+    </p>
+    <form id="form" hidden>
+        <label for="">Nombre</label>
+        <input type="text">
+        <label for="">Correo</label>
+        <input type="email">
+        <label for="">Mensaje</label>
+        <textarea name="" id="" cols="30" rows="5"></textarea>
+        <input type="submit" value="Enviar.">
+    </form>
+    <a href="mailto:quiojf@gmail.com">Email Us.</a>
+    <p>when a user clicks on this link, their default email client will open with the "To" field pre-filled with the
+        email address specified in the link.</p>
+    <h4>Telephone links</h4>
+    <p>Similarly, to create a telephone link, you can use the <mark>tel</mark> protocol followed by the telephone number
+        you want to link to. here's an example:</p>
+
+    <p><mark>&lt;a href="tel:123-456-7890"&gt;Call us at 123-456-7890&lt;/a&gt;</mark></p>
+    <a href="tel:123-456-7890">Call us at 123-456-7890</a>
+    <p>When a user clicks on this link on a mobile device, it will open their default phone app and automatically dial
+        the number. On a desktop device, clicking the link will typically do nothing, as desktop devices typically don't
+        have phone capabilities</p>
+
+    <h3>Other link-specific attributes: download, rel, and title.</h3>
+    <p>In addition to the commonly used <mark>href</mark> and <mark>target</mark> attributes, there are several other
+        link-specific attributes that can be used to enhance the functionality and user experience of hyperlinks. Here
+        are three example. <mark>download</mark>, <mark>rel</mark>, and <mark>title</mark></p>
+    <h4>The download attribute.</h4>
+    <a href="../uploads/wordpress.pdf" download="../uploads/wordpress.pdf">Download my document.</a>
+    <h4>the rel attribute</h4>
+    <a href="../css/misestilos.css" rel="stylesheet">Stylesheet css</a>
+    <h4>The title attribute</h4>
+    <a href="https://www.w3schools.com/" title="Visit another resource." target="_blank">visit w3schools html course</a>
+
+    <h3>Turning elements into links.</h3>
+    <a href="https://www.php.net" target="_blank">
+        <img src="../images/mountain_landscape.jpg" alt="Mountain landscape image." width="320" height="240">
+    </a>
+
+</body>
+
+
+</html>

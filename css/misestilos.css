@@ -1,0 +1,15 @@
+mark {
+    padding: 3px;
+    background-color: #a3a3a3;
+    color: whitesmoke;
+    border-radius: 5px;
+}
+
+li
+{
+    margin: 10px;
+}
+
+label, input{
+    display:block;
+}
