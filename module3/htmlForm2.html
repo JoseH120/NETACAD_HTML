@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form - Beyond the basics</title>
+    <link rel="stylesheet" href="../css/misestilos.css">
+</head>
+
+<body>
+    <h2>Enhancing forms with key elements: &lt;textarea&gt;, &lt;select&gt;, &lt;button&gt;, and &lt;fieldset&gt;</h2>
+    <h3>The &lt;textarea&gt; element</h3>
+    <p>Creates a multi-line text input field, which allows users to enter larger amounts of text. You can set the
+        <mark>rows</mark> and <mark>cols</mark> attributes to control the visible size of the textarea
+    </p>
+    <p>Example:</p>
+    <label for="message">Message:</label>
+    <textarea name="message" id="message" rows="4" cols="50"></textarea>
+
+    <h3>The &lt;select&gt; element</h3>
+    <p>The <mark>&lt;select&gt;</mark> element creates a dropdown list, used with <mark>&lt;option&gt;</mark> elements
+        to define the available options. You can use the <mark>multiple</mark> attribute to allow multiple selections,
+        and the <mark>size</mark> attribute to control the number of visible options.</p>
+    <p>For example:</p>
+    <label for="pasta">Pasta:</label>
+    <select name="pasta" id="pasta">
+        <option value="Spaghetti">Spaghetti</option>
+        <option value="Penne">Penne</option>
+        <option value="Lasagna">Lasagna</option>
+        <option value="Farfalle">Farfalle</option>
+    </select>
+
+    <h3>The &lt;button&gt; element</h3>
+    <p>The <mark>&lt;button&gt;</mark> element creates a clickable button that can be customized with Javascript or
+        reset a form, depending on its <mark>type</mark> attribute(e.g., <mark>submit</mark>, <mark>reset</mark>, or
+        <mark>button</mark>). If the <mark>type</mark> attribute is omitted or set to <mark>"button"</mark>, it does not
+        have any default behavior and can be controlled with Javascript.
+    </p>
+
+    <button type="button" onclick="alert('Hello world')">Click Me</button>
+
+    <h3>The &lt;fieldset&gt; element</h3>
+    <p>creates a container used to group together related form elements. It can be helpful in organizing complex forms
+        with multiple sections. The <mark>&lt;legend&gt;</mark> element can bu used within a <mark>&lt;legend&gt;</mark>
+        to provide a caption or title for the gropu</p>
+    <p>For example</p>
+    <fieldset>
+        <legend>Shipping Address</legend>
+        <label for="address">Address:</label>
+        <input type="text" id="address" name="address">
+        <br>
+        <label for="city">City:</label>
+        <input type="text" name="city" id="city">
+        <br>
+        <label for="zip-code">ZIP Code:</label>
+        <input type="text" name="zip-code" id="zip-code">
+    </fieldset>
+
+    <h2>Mastering Form Attributes: value, placeholder, disabled and readonly</h2>
+    <h3>The value attribute</h3>
+    <p>The <mark>value</mark> attribute specifies the initial value of the input field. When the form is loaded, this
+        value will be <b>pre-filled in the input field</b></p>
+    <p>For example</p>
+    <label for="first-name">First Name:</label>
+    <input type="text" name="first-name" id="first-name" value="John">
+    <br>
+
+    <h3>The placeholder attribute.</h3>
+    <p>The <mark>placeholder</mark> attribute specifies a <b>hint that describes the expected value</b> of the input
+        field.</p>
+    <p>For example:</p>
+    <label for="email">Email</label>
+    <input type="email" name="email" id="email" placeholder="name@example.com">
+    <br>
+
+    <h3>The disabled attribute</h3>
+    <p>The <mark>disabled</mark> attribute <b>disables the input field, making it uneditable and unselectable</b></p>
+    <label for="username">Username:</label>
+    <input type="text" name="username" id="username" value="John Doe" disabled>
+    <br>
+
+    <h3>The readonly attribute</h3>
+    <p>The <mark>readonly</mark> attribute <b>makes the input field read-only</b>, allowing users to view the content
+        but not edit it.</p>
+    <p>For example</p>
+    <label for="user-id">User ID:</label>
+    <input type="text" name="user-id" id="user-id" value="CPI123456789" readonly="readonly">
+
+    <h2>Diving deeper into Form-Speficic Attributes: maxlength, min, max, autocomplete, and pattern</h2>
+    <h3>The maxlength attribute</h3>
+    <p><mark>maxlength</mark> limits the number of characters that can be entered into a text input field.</p>
+    <p>For example</p>
+    <label for="username">Username:</label>
+    <input type="text" name="username" id="username" maxlength="20">
+    <br>
+
+    <h3>The min and max attributes.</h3>
+    <p><mark>min</mark> and <mark>max</mark> set the minimum and maximum values that can be entered into number, range,
+        date, and time input fields.</p>
+    <p>For example</p>
+    <label for="age">Age:</label>
+    <input type="number" name="age" id="age" min="18" max="100">
+    <br>
+
+    <h3>The autocomplete attribute</h3>
+    <p><mark>autocomplete</mark> - controls whether the browser should automatically complete input fields with
+        previously entered data. This attribute can have values of <em>"on"</em>(default), <em>"off"</em>, or
+        <em>"new-password"</em>(to disable autocomplete for password fields). </p>
+    <p>For example</p>
+    <label for="address">Address:</label>
+    <input type="text" name="address" id="address" autocomplete="off">
+    <br>
+
+    <h3>The pattern attribute.</h3>
+    <p><mark>attribute</mark> specifies a regular expression that the input value must match in order to be valid. This attribute is usefull for enforcing specific formatting or data validations rules.</p>
+    <p>for example</p>
+    <form action="#" method="get" >
+        <label for="phone">Phone:</label>
+        <input type="text" name="phone" id="phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+        <br>
+        <button type="submit">Enviar</button>
+    </form>
+    
+
+</body>
+
+</html>

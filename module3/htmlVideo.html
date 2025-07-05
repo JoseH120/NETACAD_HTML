@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html Video</title>
+    <link rel="stylesheet" href="../css/misestilos.css">
+</head>
+
+<body>
+    <h2>MEDIA.</h2>
+    <h3>Video and audio element.</h3>
+    <p>Html provides the <mark>&lt;video&gt; and &lt;audio&gt;</mark> elements for embedding these types of media in a
+        web page. </p>
+
+    <ul>
+        <li><mark>src</mark> for specifying the URL of the media file,</li>
+        <li><mark>controls</mark> for displaying built-in media controls,</li>
+        <li><mark>width</mark> and <mark>height</mark> for specifying the dimensions of the player,</li>
+        <li><mark>autoplay</mark> for automatically playing the media when the page loads,</li>
+        <li><mark>loop</mark> for looping playback, and</li>
+        <li><mark>preload</mark> for buffering the media file</li>
+    </ul>
+
+    <p>For example, the following code embeds a video with built-in media controls and automatic playback when the page
+        loads:</p>
+
+    <video src="../media/webm/my-video.webm" controls width="400">Your browser does not suppot the
+        video tag.</video>
+
+    <h3>Ensuring cross-browser compatibility</h3>
+    <p>It's important to note that <b>different browser support different video and audio codecs,</b> which can impact
+        hte compatibility of media content across various devices.</p>
+
+    <video controls width="500">
+        <!-- <source src="../media/mp4/Wildlife Windows 7 Sample Video.MP4" type="video/mp4"> -->
+        <source src="../media/webm/my-video.webm" type="video/webm">
+        <p>Your browser does not support the video tag.</p>
+    </video>
+
+    <h3>Responsive videos</h3>
+    <p>To create responsive video using HTML, you can use the <mark>&lt;video&gt;</mark> element with the
+        <mark>poster</mark>and <mark>controls</mark> attributes, and the <mark>&lt;source&gt;</mark> element with the
+        <mark>media</mark> attribute.
+    </p>
+
+    <p>The <mark>poster</mark> attribute <b>specifies an image that will be displayed when the video is not playing,</b>
+        while the <mark>media</mark> attribute located within the <mark>&lt;source&gt;</mark> element <b>specifies a
+            maximum width</b> for the video to be displayed. This allows the video to adapt to a different screen sizes.
+    </p>
+
+    <video poster="../images/my-poster.jpg" controls>
+        <source src="../media/mp4/Wildlife Windows 7 Sample Video.MP4" type="video/mp4" media="(max-width: 600px)"> 
+        <source src="../media/webm/my-video.webm" type="video/webm" >
+    </video>
+
+</body>
+
+</html>

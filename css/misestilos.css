@@ -5,6 +5,10 @@ mark {
     border-radius: 5px;
 }
 
+h1, h2{
+    color: darkblue;
+}
+
 li
 {
     margin: 10px;

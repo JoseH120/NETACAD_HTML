@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html Forms</title>
+    <link rel="stylesheet" href="../css/misestilos.css">
+</head>
+
+<body>
+    <h2>HTML FORMS</h2>
+    <h3>The &lt;form&gt; element</h3>
+    <p>The <mark>&lt;form&gt;</mark> element typically includes:</p>
+    <ul>
+        <li>The <mark>action</mark> attribute, which <b>specifies the URL of the server-side script or endpoint that
+                will process the form data.</b></li>
+        <li>The <mark>method</mark> attribute, which <b>specifies the HTTP method (GET or POST) used when sending form
+                data to the server.</b></li>
+    </ul>
+
+    <h3>The &lt;input&gt; element</h3>
+    <p>The <mark>&lt;input&gt;</mark> element is used to <b>create different types of input fields</b> used to collet
+        user data.</p>
+
+    <h4>The type attribute</h4>
+    <p>The <mark>type</mark> attribute <b>defines the functionality and input control</b> displayed to the user,
+        enabling specific data forms and validations for each field.</p>
+    <ul>
+        <li><mark>text</mark> - a single-line text input field, used for short text inputs such as names, email
+            addresses, etc.</li>
+        <li><mark>email</mark> - a single-line text input field, used specifically for entering and validating email
+            address (the browser applies built-in validation to ensure that the user's input is in the proper email
+            addresses)</li>
+        <li><mark>url</mark> - a single-line text input field, used specifically for entering, validating, and accepting
+            only properly formatted URLs</li>
+        <li><mark>number</mark> - a single-line input field used specifically to validate and accept only numbers,</li>
+        <li><mark>password</mark> - a single-line text input field that masks the entered characters to maintain the
+            confidentiality of the password.</li>
+        <li><mark>checkbox</mark> - a checkbox that can be toggled on or off, allows users to select one or more options
+            from a list</li>
+        <li><mark>radio</mark> - a radio button that belongs to a group of radio buttons (only one can be selected at a
+            time)</li>
+        <li><mark>submit</mark> - a button that submits the form data and sends it to the server as specified by the
+            <mark>action</mark> and <mark>method</mark> attributes.
+        </li>
+        <li><mark>reset</mark> - a button that clears the form data and resets it to the initial values.</li>
+    </ul>
+
+    <h4>The name attribute</h4>
+    <p>The <mark>name</mark> attribute is essential for identifying each piece of data submitted. It acts as a key for
+        the form data, allowing the server-side script to access and process user inputs based on these names</p>
+
+    <h4>The required attribute</h4>
+    <p>Adding the <mark>required</mark> attribute to an input field makes it mandatory for users to fill out that field
+        before submitting the form. It's a simple way to ensure that critical information is not omitted.</p>
+
+    <h3>The &lt;label&gt; element</h3>
+    <p>The <mark>&lt;label&gt;</mark> element plays a vital role in creating accessible and user-friendly forms. It
+        provides a <b>textual description for each input field</b>, improving form readability and usability.</p>
+
+    <p>By <b>associating a label with a specific input field</b> using the <mark>for</mark> attribute (which should
+        match the input's id attribute), users can click on the label to focus on the corresponding input, a feature
+        particularly beneficial for those using assistive technologies.</p>
+
+        
+
+</body>
+
+</html>
