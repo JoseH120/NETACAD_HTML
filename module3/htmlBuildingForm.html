@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Building HTML Forms</title>
+    <style>
+        div {
+            border: solid 1px black;
+            padding: 0.5rem;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>Example Projects</h3>
+    <h4>Example login form</h4>
+    <div>
+
+        <form action="/submit" method="post">
+            <label for="username">Username:</label>
+            <input type="text" name="username" id="username" required>
+            <br>
+
+            <label for="password">Password:</label>
+            <input type="password" name="password" id="password" required>
+            <br>
+
+            <input type="submit" value="Login">
+            <input type="reset" value="Reset">
+        </form>
+
+    </div>
+
+    <h4>Example simple contact form</h4>
+    <div>
+        <form action="/submit">
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name" required>
+            <br>
+
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" required>
+            <br>
+
+            <label for="message">Message:</label>
+            <textarea name="message" id="message" required></textarea>
+            <br>
+
+            <button type="submit">Send</button>
+        </form>
+    </div>
+
+    <h3>Example simple BMI calculator form</h3>
+    <div>
+        <form action="/submit-bmi" method="post">
+            <label for="weight">Weight (kg):</label>
+            <input type="number" name="weight" id="weight" required>
+            <br>
+            <label for="height">Height (cm):</label>
+            <input type="number" name="height" id="height" required>
+            <br>
+
+            <button type="submit">Calculate BMI.</button>
+        </form>
+    </div>
+
+    <h3>Expanded html form example</h3>
+    <div>
+        <form action="/submit" method="post">
+            <label for="name">Full name:</label>
+            <input type="text" name="name" id="name" required>
+            <br>
+
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" required>
+            <br>
+
+            <p>Choose your meal preference:</p>
+            <label for="vegetarian">Vegetarian</label>
+            <input type="radio" name="vegetarian" id="vegetarian" value="vegetarian" required>
+            <label for="non-vegetarian">Non-Vegetarian</label>
+            <input type="radio" name="non-vegetarian" id="non-vegetarian" required>
+            <br>
+
+            <p>Select the workshops you'd like to attend:</p>
+            <label for="workshop1">Workshop 1</label>
+            <input type="checkbox" name="workshop1" id="workshop1">
+            <label for="workshop2">Workshop 2</label>
+            <input type="checkbox" name="workshop2" id="workshop2">
+            <label for="workshop3">Workshop 3</label>
+            <input type="checkbox" name="workshop3" id="workshop3">
+            <br>
+            
+            <input type="submit" value="Register">
+        </form>
+    </div>
+
+</body>
+
+</html>
