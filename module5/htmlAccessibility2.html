@@ -1,12 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Accessibility Part2</title>
     <link rel="stylesheet" href="../css/misestilos.css">
 </head>
+
 <body>
     <h1>Accessible Rich Internet Applications (ARIA)</h1>
+    <p>
+        ARIA is a powerful <b>set of attributes that you can add to HTML elements</b>
+    </p>
+    <p>
+        ARIA enhances the accessibility of dynamic and interactive content by <b>providing additional information to
+            assistive technologies</b>, like screen readers. It ensures that users with disabilities can effectively
+        navigate and interact with your web applications.
+    </p>
+
+    <h2>ARIA Roles</h2>
+    <p>
+        One of the key components of ARIA is the concept of <b>roles</b>. Roles define <b>the type and purpose of an
+            element</b>, helping assistive technologies understand its function.
+    </p>
+    <p>
+        For instance, you can use the <mark>role</mark> attribute to indicate wheter and element is a button, link,
+        heading, or any other interactive element. This way, screen readers can accurately convey the purpose of the
+        element to users.
+    </p>
+
+    <textarea readonly style="height: 60px;">
+<button role="button">Click me</button>
+<a href="#" role="link">Read more</a>
+<h2 role="heading">Important Information</h2></textarea>
+    <p>These roles help assistive technologies understand the intended purpose of each elements, enhancing the
+        accessibility of the content.</p>
+
+    <h2>ARIA States and Properties.</h2>
+    <p>
+        In addition to roles, ARIA includes <b>states and properties</b> that further describe the behavior of elements.
+        States describe <b>the current condition of an element</b>, while properties <b>provide additional information
+            about an element's characteristics</b> </p>
+    <p>
+        For example, you can use ARIA attributes like <mark>aria-expanded</mark>, <mark>aria-checked</mark>, and
+        <mark>aria-hidden</mark> to communicate whether a menu is open or closed, a checkbox is checked or unchecked, or
+        an element is hidden from screen readers, respectively:
+    </p>
+
+    <textarea style="height: 70px;" readonly>
+<button aria-expanded="true">Toggle menu</button>
+<input type="checkbox" aria-checked="false">
+<div aria-hidden="true">This content is hidden from screen readers</div>
+    </textarea>
+
+    <p><b>Result of the code before</b> </p>
+    <button aria-expanded="true">Toggle menu</button>
+    <input type="checkbox" aria-checked="false">
+    <div aria-hidden="true">This content is hidden from screen readers</div>
+    <p>In this example, the <mark>button</mark> elements uses <mark>aria-expanded</mark> to indicate that the menu is
+        currently open, the <mark>input</mark> element uses <mark>aria-checked</mark> to indicate that the checkbox is
+        unchecked, and the <mark>div</mark> elements uses <mark>aria-hidden</mark> to hide its content from screen
+        readers. These ARIA attributes enhance the accessibility and understanding of the elements for users of
+        assistive technologies</p>
+    <p>Again, to ensure you ARIA implementations are effective, it's important to test your web application with screen
+        readers and other assistive technologies. This will help you verify that the added ARIA roles, states, and
+        properties are accurately conveyed to users with disabilities.</p>
+
+
+    <h2>Testing Accessibility</h2>
+    <p>
+        Testing your website for accessibility helps you <b>identify potential issues and make necessary
+            improvements</b>. Here's what you can do:
+    </p>
+    <ol>
+        <li>Use <b>built-in accessibility tools</b> to identify potential accessibility issues. Most modern web browsers
+            have built-in accessibility tool kits, for example: <ul>
+                <li><em>Chrome Accessibility DevTools</em>: In Google Chrome, open your website, right-click on an
+                    element, and select "Inspect". Go to the "Accessibility" tab in DevTools panel to see a list of
+                    accessibility issues.
+                </li>
+                <li><em>Firefox Accessibility Inspector</em>: In Mozilla Firefox, right-click on an element and select
+                    "Inspect element". Go to the "Accessibility" tab in the inspector panel to view accessibility
+                    information and issues.</li>
+            </ul>
+        </li>
+        <li><b>Validate HTML with W3C Validator</b> - use the <ins style="color: #7df9ff;">W3C HTML Validators</ins>
+            to check your HTML code for any syntax erros or structural issues that might affect accessibility. Valid
+            HTML ensures that your website is well structured and follows best practices.</li>
+        <li><b>Test with screen readers</b> - This can help you understand how users with disabilities experience your
+            content. You can use a free reader:</li>
+        <ul>
+            <li>NVDA</li>
+            <li>VoiceOver</li>
+        </ul>
+        <li><b>Check keyboard navigation</b> to ensure that your website can be navigated using only a keyboard. Use the
+            "tab" key to navigate through interactive elements, links, and forms. Ensure focus indicators are visible
+            and elements can be activated using the "Enter" key.</li>
+        <li><b>Use color contrast checkers</b>, such as the one provide by <ins style="color: #7df9ff;">WebAIM</ins>
+        </li>
+        <li>Finally, <b>test with real users</b> - conduct <ins style="color: #7da9ff">Usability testing</ins></li>
+    </ol>
 </body>
+
 </html>
