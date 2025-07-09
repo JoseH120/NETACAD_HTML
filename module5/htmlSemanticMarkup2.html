@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semantic Markup - Part2</title>
+    <link rel="stylesheet" href="../css/misestilos.css">
+</head>
+
+<body>
+    <h1>Microformats, Microdata, and Schema.org</h1>
+    <p>
+        When we build a website, we often want search engines line Google to be able to understand what our website is
+        about so that they can show it to people who are looking for that information.
+    </p>
+    <p>
+        Microdata and microformats are two ways of <b>adding extra information to your website in a structured way so
+            that search engines can easily understand it</b>.
+    </p>
+    <p>
+        for example, let's say we have a recipe website. we can use microdata or microformats to add structured data to
+        our recipe pages such as the name of the recipe, the ingredients, and the cooking time. <br>This makes it easier
+        for search engines to recognize that the page is about a recipe and show it to people who are searching for that
+        recipe.
+    </p>
+
+    <h2>Microformats.</h2>
+    <p>
+        microformatsu use a specific class naming convention to <b>define data within HTML elements.</b>
+    </p>
+    <p>
+        For example, <em>hCard</em> is a microformat used to describe a person or organization and their contact
+        information. It is based on the vCard format, which is a standardized format for electronic business cards that
+        is used for exchangin contact information between different applications and platforms
+    </p>
+    <p>
+        To implement <em>hCard</em>, you would add class names to specific HTML elements to indicate what information is
+        contained within them. <b>Search engines can then extract this information and display it in search results.</b>
+    </p>
+    <p><b>For example look the code below</b>:</p>
+    <textarea style="height:185px" cols="50" readonly>
+<div class="vCard">
+    <p class="fn">John Smith</p>
+    <p class="title">Web Developer</p>
+    <p class="org">Smith Web Solutions</p>
+    <p class="tel">555-555-5555</p>
+    <a href="mailto:john@smithwebsolutions.com" class="email">john@smithwebsolutions.com</a>
+    <p class="adr">
+        <span class="street-address">123 Main St.</span>
+        <span class="locality">Anytown</span>, <span class="region">CA</span> <span class="postal-code">12345</span>
+    </p>
+</div>
+    </textarea>
+    <p><b>Result of the code below</b>.</p>
+    <div class="vCard">
+        <p class="fn">John Smith</p>
+        <p class="title">Web Developer</p>
+        <p class="org">Smith Web Solutions</p>
+        <p class="tel">555-555-5555</p>
+        <a href="mailto:john@smithwebsolutions.com" class="email">john@smithwebsolutions.com</a>
+        <p class="adr">
+            <span class="street-address">123 Main St.</span>
+            <span class="locality">Anytown</span>, <span class="region">CA</span> <span class="postal-code">12345</span>
+        </p>
+    </div>
+
+    <h2>Microdata and Schema.org</h2>
+    <p>
+        Microdata, on the other hand, <b>uses HTML attributes to associate data with specific elements.</b>
+    </p>
+    <p>
+        The most commonly used attribute for microdata is the <mark>itemprop</mark> attribute, which defines the type of
+        data contained within an HTML element. For example, if you have a page with a review of a product, you could use
+        the <mark>itemprop</mark> attribute to indicate the name of the product, the author of the review, and the
+        rating given.
+    </p>
+    <p>
+        <ins style="color:blue">Schema.org</ins> is a <b>specific vocabulary of microdata</b> that was developed by
+        Google, Microsoft, Yahoo, and other search engines to standardize the way structured data is added to web pages.
+        By using <em>Schema.org</em>, you can provide even more detailed information to search engines about your
+        content, such as the author, the publisher, and the date published.
+    </p>
+    <p>
+        <b>
+            Here's an example of using microdata to add schema.org structured data to a web page:
+        </b>
+    </p>
+
+    <textarea style="height: 120px;" readonly>
+<div itemscope itemtype="http://schema.org/Person">
+    <h2 itemprop="name">John Smith</h2>
+    <p itemprop="jobTitle">Web developer</p>
+    <p>
+        Contact me at:
+        <a href="mailto:john@smithwebsolutions.com" itemprop="email">john@smithwebsolutions.com</a>
+    </p>
+</div></textarea>
+    <p><b>Result of the code above</b></p>
+    <div>
+        <h2 itemprop="name">John Smith</h2>
+        <p itemprop="jobTitle">Web developer</p>
+        <p>
+            Contact me at:
+            <a href="mailto:john@smithwebsolutions.com" itemprop="email">john@smithwebsolutions.com</a>
+        </p>
+    </div>
+
+    
+
+
+</body>
+
+</html>

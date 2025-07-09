@@ -17,3 +17,7 @@ li
 label, input{
     display:block;
 }
+textarea{
+    border: none;
+    width: 100%;
+}

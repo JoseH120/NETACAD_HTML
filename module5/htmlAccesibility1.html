@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/misestilos.css">
+</head>
+
+<body>
+    <h1>What is web accessibility?</h1>
+    <p>
+        Web accessibility ensures that <b>people with disabilities can perceive, understand, navigate, and interact with
+            your website just like anyone else.</b>
+    </p>
+
+    <h2>Why is web accessibility important?</h2>
+    <ul>
+        <li><b>Inclusivity</b> - one of the main reasons for web accessibility is to ensure that your website is
+            inclusive and caters to a diverge range of users. When you crate an accessible website, you're making it
+            possible for everyone, regardless of their abilities, to access and enjoy your content.</li>
+        <li><b>Legal and ethical responsibility</b> - many countries have laws and regulations that require websites to
+            be accessible. By adhering to these guidelines, you're not only fulfilling your legal obligations but also
+            demonstrating commitment to ethical principles and social responsibility. Examples of such laws are the <ins
+                style="color:#7df9ff">ADA</ins> - The Americans with Disabilities Act in the USA, and the <ins
+                style="color:#7df9ff">EAA</ins> - The European Accessibility Act in Europe</li>
+        <li><b>Expanded audience</b> - designing with accessibility in mind means reaching a wider audience. People with
+            disabilities are a significant portion of the population, and by accommodating their needs, you're tapping
+            into a valuable demographic.</li>
+        <li><b>Improved SEO</b> - many accessibility practices align with search engine optimization (SEO) best
+            practices. Properly structured content, descriptive headings, and meaningful image alt text can boost your
+            website's search engine ranking.</li>
+    </ul>
+
+    <h1>Web Content Accessibility Guidelines (WCAG)</h1>
+    <p>
+        The WCAG are a set of <b>internationally recognized guidelines for making web content more accessible</b>.
+        <br>
+        They provide a framework for creating web content that can be understood, navigated, and interacted with by
+        everyone, regardless of their abilities or types/specificities of devices used to access content.
+        <br>
+        The main principles of WCAG are <b>perceivable, operable, undestanble, and robust</b>.
+    </p>
+
+    <p>
+        The WCAG guidelines are organized into three levels of conformance: A, AA, and AAA. <br> Each level has specific
+        success criteria that your website should meet to ensure accessibility (i.e. it indicates the degree to which
+        your website meets accessibility standards)
+    </p>
+
+    <ol>
+        <li><b>Level A</b> - focuses on the most fundamental accessibility requirements. It's a great starting point and
+            ensures that your website can be used by a broader audience.</li>
+        <li><b>Level AA</b> - meeting Level AA criteria enhances accessibility even further. It includes guidelines for
+            more complex interactions and content, making your website accessible to a wider range of users.</li>
+        <li><b>Level AAA</b> - the highets level of conformance and includes guidelines that address the most intricate
+            accessibility issues. Meeting Level AAA criteria provides the most inclusive experience for users.</li>
+    </ol>
+
+    <h3>Applying WCAG</h3>
+    <p>
+        Is a step-by-step process that involves understanding the guidelines, assessing your website's accessibility,
+        and implementing necessary changes. Let's break down the process into simple steps:
+    </p>
+    <ol>
+        <li><b>Familiarize yourself with WCAG</b> - start by studying the WCAG guidelines.</li>
+        <li><b>Conformance levels</b> - decide on the conformance level you want to achieve: A, AA, or AAA. Level AA is
+            often recommended as it covers a broad range of accessibility issues</li>
+        <li>b{Website Evaluation}: <ul>
+                <li>Manual evaluation - review your website's content design, and functionality manually to identify
+                    potential accessibility barriers</li>
+                <li>Automated tools - use automated <ins>accessibility testing tools</ins> to scan your website for
+                    issues. Keep in mind that automated tools catch many issues but not all.</li>
+            </ul>
+        </li>
+        <li><b>Identify accessibility issues</b>
+            <ul>
+                <li><b>Perceivable</b> - check for proper alternative text for images, captions for multimedia, and
+                    appropriate headings for content structure</li>
+                <li><b>Operable</b> - ensure keyboard navigation, focus indicators, and proper form labels. Verify that
+                    users can interact with all elements without limitations.</li>
+                <li><b>Understanble</b> - use clear and simple language provide instructions, and avoid complex
+                    navigation structures.</li>
+                <li><b>Robust</b> - ensure compatibility with various assistive technologies and web browsers.</li>
+            </ul>
+        </li>
+        <li><b>Make necessary changes / Apply Strategies to create accessible content:</b></li>
+        <li><b>Readable text</b> - Use legible font sizes and fonts that are easy to read. Avoid using small text thay
+            may be difficult for users with visual impairments to read.</li>
+        <li><b>Color contrast</b> - Adjust text and background colors to meet contrast ratios and ensure readability,
+            especially for user with visual impairments.</li>
+        <li><b>Keyboard navigation</b> - ensure all interactive elements, such as buttons, links, and forms fields, can
+            be accessed and used with a keyboard. This is crucial for users who cannot use a mouse. Ensure that focus
+            indicators are visible and clearly distinguishable when navigating through your website using a keyboard.
+            This helps users understand where their focus is on the page.</li>
+        <li><b>Headings and semantics elements</b> - use proper HTML elments like headings (h1 - h6), lists, and
+            semantic tags(e.g. nav, main, section, and article) to structure your content. This helps screen readers
+            understand the organization of your webpage.</li>
+        <li><b>Alternative text</b> - provide descriptive alternative text for images and non-text content using the
+            <em>alt</em> attribute.
+        </li>
+        <li><b>Forms and labels</b> - ensure form fields have clear labels and provide error messages</li>
+        <li><b>Descriptive links</b> - write meaningful and descriptive link text instead of generic phrases like "click
+            me" or "read more". This helps user understand the purpose of the link without relying solely on context.
+        </li>
+        <li><b>video and audio</b> - add captions and transcript for multimedia content. Also, include transcript for
+            multimedia, making the content accessible to users who are deaf or hard of hearing. Avoid auto-playing audio
+            or video content, as it can be disruptive and disorienting for users who rely on screen readers.</li>
+        <li><b>Accesible forms</b> - ensure form fields have clear and concise labels. Use HTML attributes like
+            <mark>aria-label</mark> and <mark>aria-labelledby</mark> to provide addtional context to assistive
+            technologies.
+        </li>
+        <li><b>Use ARIA roles</b> - use ARIA (Accesible Rich Internet Applications) roles and attributes to enhance the
+            accessibility of dynamic and interactive content, such as buttons, sliders, tabs, and modals.</li>
+        <li><b>Test and verify</b>:
+            <ul>
+                <li><b>User testing - involve users with disabilities in testing</b> your website for accessibility.
+                    They can provide valuable feedback on the user experience.</li>
+                <li><b>Manual testing</b> - go through each success criterion and ensure they are implemented correctly.
+                </li>
+                <li><b>Automated testing</b> - use automated tools to catch any remaining issues.</li>
+            </ul>
+        </li>
+        <li><b>Regular maintenance</b> - continously monitor and update your website's accessibility as you add new
+            content or make changes. Stay informed about updates to WCAG guidelines and best practices.</li>
+    </ol>
+
+</body>
+
+</html>
