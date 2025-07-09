@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event and Data.</title>
+    <link rel="stylesheet" href="../css/misestilos.css">
+</head>
+
+<body>
+
+    <h1>Understanding Event and Data Attributes</h1>
+    <h2>Event Attributes</h2>
+
+    <p>Event attribute are used to <b>define how to HTML elements should respond to user interactions</b>, such as mouse
+        click or keyboard input. When an event is triggered, it executes a specified function or script.</p>
+
+    <p>Some of the most commonly used event attributes include:</p>
+    <ul>
+        <li><mark>onclick</mark> - executes a script when the element is clicked,</li>
+        <li><mark>onmouseover</mark> - executes a script when the mouse pointer moves over the element,</li>
+        <li><mark>onmouseout</mark> - executes a script when the mouse pointer moves out of the element,</li>
+        <li><mark>onkeydown</mark> - executes a script when a keyboard key is pressed down,</li>
+        <li><mark>onkeyup</mark> - executes a script when a keyboard key is released. </li>
+    </ul>
+
+    <p>For instance, using <mark>onclick</mark>, you can make a button show a message when clicked:</p>
+    <button onclick="alert('hello world!')">click me</button>
+    <p>In this example, clicking the button <b>triggers an alert box</b> with "hello world" this simple interaction is
+        achieved without needing in-depth JavaScript knowledge.</p>
+
+    <h2>Data Attributes</h2>
+    <p>Data attributes are used to <b>store extra information about HTML element that is not displayed to the user</b>
+    </p>
+    <p>This information can be used for scripting or styling purposes (you can store information such IDs, values, or
+        other data that may be useful in web development), and can be accessed and manipulated via JavaScript or CSS.
+    </p>
+    <p>You start these attributes with <mark>data-</mark> and add a name that makes sense for what you're storing, like
+        <mark>data-recepe-id</mark> for unique recipe number
+    </p>
+
+    <p>Imagine a cooking website where users can save recipes. You can use data attributes to keep each recipe's unique
+        ID right in the HTML.</p>
+
+    <ul>
+        <li data-recipe-id="001">
+            <h2>Spaghetti with Meatballs</h2>
+            <p>A classic Italian dish that's perfect for a cozy night in.</p>
+            <button class="save-recipe">Save Recipe</button>
+        </li>
+        <li data-recipe-id="002">
+            <h2>Chicken Tikka Masala</h2>
+            <p>A flavorful Indian curry that's sure to please.</p>
+            <button class="save-recipe">Save Recipe</button>
+        </li>
+        <li data-recipe-id="003">
+            <h2>Beef and Broccoli Stir Fry</h2>
+            <p>A quick and easy weeknight dinner that's packed with flavor.</p>
+            <button class="save-recipe">Save Recipe</button>
+        </li>
+    </ul>
+
+    <p>In this example, each recipe is represented by an <mark>li</mark> element with a <mark>data-recipe-id</mark>
+        attribute that stores the unique ID of the recipe. When the user clicks the "Save Recipe" button, a JavaScript
+        function could be called that retrieves the recipe ID from the data attribute and sends it to your backend API
+        in order to add it to the user's recipe box.</p>
+
+    <p>The possibilities are endless, and data attributes can be used in many different ways to add functionality and
+        customization to your website.</p>
+
+
+</body>
+
+</html>
