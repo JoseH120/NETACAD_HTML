@@ -18,6 +18,9 @@ label, input{
     display:block;
 }
 textarea{
+    box-sizing:border-box;
     border: none;
     width: 100%;
+    background: grey;
+    color: white;
 }
