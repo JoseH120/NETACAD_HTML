@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML APIs</title>
+    <link rel="stylesheet" href="../css/misestilos.css">
+
+</head>
+
+<body>
+
+    <h1>HTML APIs</h1>
+
+    <h2>Understanding HTMLApis</h2>
+
+    <p>
+        An HTML API, or <b>Application Programming Interface</b>, is a set of rules, protocols, and tools that allows
+        different software <b>components, application, or system to interact and communicate with each other</b>
+    </p>
+
+    <h2>Geolocation API</h2>
+    <p><strong>retrieve the geographic location</strong></p>
+
+    <p>Let's take a look at an example code that utilizes the Geolocation API to fetch user's current coordinates and
+        display them on the webpage:</p>
+
+
+    <button id="getLocation">Get Location</button>
+
+    <p id="result"></p>
+
+    <h2>Audio and video APIs</h2>
+    <p>
+        These elements come with their own APIs that allow you to <b>control payback, volume, and other features</b>
+        They are great for embedding music, videos, popcasts, or other multimedia elements without relying on external
+        pulgins.
+    </p>
+
+    <audio controls>
+        <source src="../media/mp3/dragonball.mp3">
+        <p>You browser does not support the audio element.</p>
+    </audio>
+
+    <h2>Web Storage API</h2>
+    <p>
+        The Web Storage API lets websites save data directly on your device. This is super helpful for web applications
+        that want to keep track of your settings, like your preferred language or theme, save data for later, or let you
+        use their features even when you're not online.
+    </p>
+    <p>There are two main types of storage:</p>
+    <ul>
+        <li><b>Session Storage</b>, which is like a temporary memory for your website visit. It remembers things while
+            your browser is open, but once your</li>
+        <li><b>Local Storage</b>, which u can think of as a more permanent memory. It keeps data even after you closed
+            and reopen your browser. This is a great for saving preferences that make your visits more personal and
+            convenient.</li>
+    </ul>
+
+    <p>These work similarly to <em>cookies</em> but are more intuitives</p>
+
+    <h2>Notifications API</h2>
+    <p>is like messenger that <b>allows your website to send messages(notifications) to users</b>, even if they're not
+        currently looking at your site.</p>
+
+    <h2>Canvas API</h2>
+    <p>is like a digital art studio for your website. It gives you the tools to draw, animate, and create interactive
+        graphics right in the browser with javascript. This is fantastic for adding visual flair to your site, wheter
+        it's simple drawing , complex animations, or interactive games.</p>
+
+        
+
+    <script>
+        const getLocationButton = document.getElementById("getLocation");
+        const resultElement = document.getElementById("result");
+        getLocationButton.addEventListener('click', () => {
+            if ("geolocation" in navigator) {
+                navigator.geolocation.getCurrentPosition((position) => {
+                    const latitude = position.coords.latitude;
+                    const longitude = position.coords.longitude;
+                    resultElement.textContent = `Latitude: ${latitude}, Longitude: ${longitude}`;
+                })
+            } else {
+                resultElement.textContent = "Gelolocation is ot supported by your browser";
+            }
+        })
+
+        // Save the theme to local storage.
+        localStorage.setItem('theme', 'dark');
+
+        // Retrieve the theme when the user comes back
+        const userTheme = localStorage.getItem('theme')
+        document.body.classList.add(userTheme); // "dark" theme
+
+    </script>
+
+
+</body>
+
+</html>

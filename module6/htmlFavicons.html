@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Favicons</title>
+    <link rel="stylesheet" href="../css/misestilos.css">
+</head>
+
+<body>
+    <h1>Favicons</h1>
+    <h2>Understanding Favicons</h2>
+    <p>A favicon is a small icon that is associated with a website. It appears <b>in the browser's tab or bookmark
+            bar</b>, providing a visual representacion of the website.</p>
+
+    <p>To add a favicon to your HTML document, you need to place the following code inside the <mark>&lt;head&gt;</mark>
+        section:</p>
+    <pre>&lt;link rel="icon" href="favicon.ico" type="image/x-icon"&gt;</pre>
+    <ul>
+        <li>the <mark>rel</mark> attribute specifies the relationship of the linked resource to the document,</li>
+        <li>and <mark>href</mark> points to the location of the favicon file.</li>
+        <li>the <mark>type</mark> attribute defines the file type of the favicon, which is typically <em
+                style="background-color:green; color: white;">image/x-icon </em></li>
+    </ul>
+    <p>
+        If you prefer to use a different format for your favicon, change the file extension and the <mark>type</mark>
+        attribute to the desired change. For example:
+    </p>
+    <pre>&lt;link rel="icon" href="favicon.png" type="image/png"&gt;</pre>
+    <p>it's important to <b>place the favicon file in the root directory of your website</b> so that it can be easily
+        accessed by the browser</p>}
+
+    <p>Remember to create multiple sizes of your favicon to ensure compatibility across diferrent devices. Here's an
+        example that includes multiple sizes using the <mark>sizes</mark> attribute:</p>
+    <pre>&lt;link rel="icon" href="favicon.ico" type="image/x-icon" sizes="16x16 32x32"&gt;</pre>
+
+    
+</body>
+
+</html>

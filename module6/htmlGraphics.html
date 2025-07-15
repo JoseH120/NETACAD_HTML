@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graphics HTML</title>
+    <link rel="stylesheet" href="../css/misestilos.css">
+</head>
+
+<body>
+    <h1>HTML Graphics</h1>
+    <h2>Understanding HTML Graphics</h2>
+
+    <p>they help bring your web pages to life with colors, shapes, and animations. In HTML, there are two widely used
+        methods for creating graphics:</p>
+    <ul>
+        <li>The <b>canvas</b> element, which allows you to draw and animate 2D shapes and images directly through
+            JavaScript, and</li>
+        <li><b>Scalable Vector Graphics</b> (SVG), a way to include high-quality graphics that can be scale to any size
+            without losing clarity, perfect for logos, icons, and complex illustrations.</li>
+    </ul>
+
+    <h2>Canvas</h2>
+    <p>Canvas enables you to:</p>
+    <ul>
+        <li>Create lines, shapes and images.</li>
+        <li>Develop animations and interactive elements.</li>
+        <li>Implement games and dynamic visual effects.</li>
+    </ul>
+    <p>While you can create the <mark>canvas</mark> element in HTML, you need JavaScript to make it perform meaningful
+        actions (drawing on a canvas in HTML involves using the <ins>canvas API</ins>, a set of tools for drawing
+        shapes, lines, images, text, and more on the canvas) </p>
+    <p>Therefore, at this stage, we're merely introducing the concept of canvas, with more in-depth exploration coming
+        up when we delve into JavaScript.</p>
+    <p>For now, let's look at a basic example:</p>
+        
+    <canvas id="mycanvas" width="300" height="200"></canvas>
+
+    <h2></h2>
+
+    <script>
+        const canvas = document.getElementById('mycanvas');
+        const ctx = canvas.getContext("2d");
+
+        ctx.fillStyle = "red";
+        ctx.fillRect(10, 10, 200, 100);
+    </script>
+
+</body>
+
+</html>

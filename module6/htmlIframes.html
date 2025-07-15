@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Iframes</title>
+    <link rel="stylesheet" href="../css/misestilos.css">
+</head>
+
+<body>
+    <h1>HTML Iframes.</h1>
+    <h2>Understanding iframes</h2>
+    <p>iFrames (short for <b>inline frame</b>) are HTML elements that act as <b>a window into another web page or
+            document</b></p>
+    <iframe src="https://www.youtube.com/embed/a3ICNMQW7Ok" width="560" height="315" frameborder="0"
+        allowfullscreen></iframe>
+
+    <ul>
+        <li>code snippet you set the source attribute (<mark>src</mark>) to the URL of the YouTube video you want to
+            embed, in this case <mark>https://www.youtube.com/embed/VIDEO_ID</mark></li>
+        <li>you can also specify the width and the height of the iFrame to ensure the video fits nicely within your
+            page.</li>
+        <li>The <mar>frameborder</mar> attribute is set to 0 to remove the border aroung the iFrame (to show the border,
+            set the attribute to "1").</li>
+        <li>The <mark>allowfullscreen</mark> attribute allows the video to be viewed in fullscreen mode. (You can also
+            use "true" to allow fullscreen and "false" to restrict it)</li>
+    </ul>
+
+    <h2>Responsive IFrames</h2>
+    <p>
+        you can make them responsive <b>by setting their width and height using relative units</b> such as percentages,
+        instead of fixed pixel values. This allows the iFrames to <b>scale dynamically with the screen size</b>,
+        ensuring optimal viewing experience across devices.
+    </p>
+    <pre>&lt;iframe src="https://www.youtube.com/embed/a3ICNMQW7Ok" width="100%" height="315"&gt;</pre>
+
+</body>
+
+</html>
